@@ -12,6 +12,7 @@ import Shop from './components/Cards/Shop.jsx';
 import Cart from './components/Cards/Cart.jsx';
 import About from './components/About.jsx';
 import { productsAndCartData } from './Loader/Loader.js';
+import { Toaster } from 'react-hot-toast';
 
   const router = createBrowserRouter([
     {
@@ -43,5 +44,9 @@ import { productsAndCartData } from './Loader/Loader.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
-<RouterProvider router ={router}/>
+    <>
+    <Toaster/>
+    <RouterProvider router ={router}/>
+    </>
+
 )
